@@ -17,7 +17,6 @@ import java.util.List;
 @Table(name = "employees")
 public class Employee {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long employeeId;
     private String department;
     private String name;

@@ -34,6 +34,7 @@ public class EmployeeService {
     public void createEmployee(EmployeeDto dto) {
 
         Employee model = new Employee();
+        model.setEmployeeId(dto.getEmployeeId());
         model.setName(dto.getName());
         model.setStatus(dto.getStatus());
         model.setDepartment(dto.getDepartment());
